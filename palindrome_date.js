@@ -34,7 +34,9 @@ function getpaliandromeDates() {
         }${year}`;
         let revdate = date.split("").reverse().join("");
         if (date === revdate) {
-          console.log(date);
+          console.log(
+            date.slice(0, 2) + "" + date.slice(2, 4) + "" + date.slice(4)
+          );
         }
       }
     }
